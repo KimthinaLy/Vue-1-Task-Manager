@@ -1,42 +1,47 @@
-# task-manager
+# Paw Tasks
 
-This template should help get you started developing with Vue 3 in Vite.
+A task manager app built with Vue 3 and TypeScript — created to practice Vue fundamentals by building something real.
 
-## Recommended IDE Setup
+---
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## About
 
-## Recommended Browser Setup
+Paw Tasks lets you manage daily tasks with priority levels, filtering, completion tracking, and drag-to-reorder. Tasks persist across sessions via localStorage.
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+**Why I built this:** I'm learning Vue by doing — not just reading docs. This project covers reactivity, component architecture, props/emits, computed properties, v-model, and localStorage persistence in a practical context.
 
-## Type Support for `.vue` Imports in TS
+---
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+## Tech Stack
 
-## Customize configuration
+| Tool | Version |
+|------|---------|
+| Vue | 3 |
+| TypeScript | 6 |
+| Vite | 8 |
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+---
 
-## Project Setup
+## Setup
 
-```sh
+**Requirements:**
+- Node.js 18+
+- VS Code with [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) extension
+
+**Install and run:**
+
+```bash
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+---
 
-```sh
-npm run build
-```
+## Features
+
+- Add tasks with priority levels (Urgent / Important / Soon / Later)
+- Mark tasks complete with strikethrough
+- Delete tasks
+- Filter by priority
+- Drag to reorder
+- Persisted to localStorage
